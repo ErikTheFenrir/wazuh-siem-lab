@@ -97,4 +97,16 @@ för att testa Wazuhs detektionsförmåga i realtid.
 hydra -l kali -P /usr/share/wordlists/rockyou.txt -t 4 ssh://NAT/Host-only
 ```
 ![Kali after attack](screenshots/User02_kali-after-attack.png)
+**MITRE ATT&CK-detektion efter attack:**
 
+| Taktik | Antal events |
+|--------|-------------|
+| Credential Access | 120 |
+| Lateral Movement | 47 |
+| Defense Evasion | 9 |
+| Privilege Escalation | 8 |
+| Initial Access | 4 |
+
+Wazuh detekterade brute force-attacken omedelbart och mappade
+den mot MITRE ATT&CK. Credential Access med 120 events
+bekräftar att de upprepade inloggningsförsöken registrerades korrekt.
