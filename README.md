@@ -75,7 +75,7 @@ Normalläge innan attacksimulering:
 - Authentication failures: 0
 - Dominerande regelgrupper: sca, ossec, rootcheck
 
-![Kali baseline](screenshots/User02_Baseline-3.png)
+![Kali baseline](screenshots/User02_Baseline.png)
 
 
 
@@ -84,7 +84,7 @@ Normalläge innan attacksimulering:
 Wazuh identifierade en kritisk sårbarhet i paketet **h11**.
 CVE-2025-43859 har ett CVSS-score på 9.1 och publicerades 2025.
 
-![Kali kritisk CVE](screenshots/User02_events-4.png)
+![Kali kritisk CVE](screenshots/User02_events.png)
 
 
 
