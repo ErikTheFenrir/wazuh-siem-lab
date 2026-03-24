@@ -110,3 +110,14 @@ hydra -l kali -P /usr/share/wordlists/rockyou.txt -t 4 ssh://NAT/Host-only
 Wazuh detekterade brute force-attacken omedelbart och mappade
 den mot MITRE ATT&CK. Credential Access med 120 events
 bekräftar att de upprepade inloggningsförsöken registrerades korrekt.
+
+## Vad jag tar med mig ifrån denna
+
+- Versionskompatibilitet är viktigt - Den första jag använde var v4.14.4 och den var inkompatibel med Manager v4.12.0,
+  vilket krävde manuell nedgradering till den nivå som matchade.
+- Ossec.conf måste konfigureras manuellt - Vid en ominstallation så återställdes konfigurationen.
+  Så manager-IP måste sättas i `<server><address>` annars ansluter agenten inte.
+- Windows Firewall blockerar ICMP och TCP - När jag gjorde nmap så krävdes det att jag använde flaggan `-Pn` mot windows maskiner för annars rapporteras det som att hosten är offline trots att den är aktiv.
+- Wazuh detekterar brute-force utan att behöva extra konfiguration - Jag använde SSH-attacken som triggade systemet direkt i Credential Access i MITRE ATT&CK utan att behöva anpassa några speciella regler.
+- SCA score på 41-46% är normalt för ohärdade labbmaskiner - CIS Benchmark kräver aktiv härdning, tex. lösenordspolicyer
+  och nätverksbegränsningar för att få en högre score.
