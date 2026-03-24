@@ -45,7 +45,7 @@ Senaste 24 timmarnas alerts visade 0 kritiska, 158 Medium och 96 Low severity ev
 Kali-agenten är aktiv och registrerad sedan 24 mars 2026.
 SCA-scan kördes mot CIS Distribution Independent Linux Benchmark v2.0.0.
 
-![Kali agent overview](screenshots/User02_overview-2.png)
+![Kali agent overview](screenshots/User02_overview.png)
 
 **SCA-resultat – CIS Distribution Independent Linux Benchmark v2.0.0:**
 | Status | Antal |
