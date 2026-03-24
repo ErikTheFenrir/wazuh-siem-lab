@@ -34,7 +34,7 @@ Senaste 24 timmarnas alerts visade 0 kritiska, 158 Medium och 96 Low severity ev
 
 ![Wazuh startpage](screenshots/Startpage.png)
 
-![Agents overview](screenshots/Users_agents-2.png)
+![Agents overview](screenshots/Users_agents.png)
 
 
 
