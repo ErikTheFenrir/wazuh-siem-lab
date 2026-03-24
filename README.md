@@ -95,3 +95,6 @@ för att testa Wazuhs detektionsförmåga i realtid.
 
 ```bash
 hydra -l kali -P /usr/share/wordlists/rockyou.txt -t 4 ssh://NAT/Host-only
+
+![Kali after attack](screenshots/User02_kali-after-attack.png)
+
